@@ -11,7 +11,7 @@
 <body>
 
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-md navbar-light bg-light">
+    <nav class="navbar fixed-top navbar-expand-md navbar-light bg-light py-3 box-shadow">
         <a class="navbar-brand" href="index.html">
             <img src="img/caravan.svg" alt="Caravan">
         </a>
@@ -26,8 +26,17 @@
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
-                    <a class="nav-link" href="locais.html">Locais</a>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" id="navbarDropdown" 
+                    role="button" data-toggle="dropdown" 
+                    aria-haspopup="true" aria-expanded="false"" href="#">
+                        Locais
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="local.html">California</a>
+                        <a class="dropdown-item" href="local.html">Paris</a>
+                        <a class="dropdown-item" href="local.html">Dublin</a>
+                    </div>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="planos.html">Planos</a>
