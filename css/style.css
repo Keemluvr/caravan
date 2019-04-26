@@ -36,3 +36,12 @@ body {
 .buttom-max-width {
     max-width: 140px;
 }
+
+.lista-plano li + li {
+    border-top: 1px solid rgba(0,0,0,.2);
+}
+
+.lista-plano li {
+    padding: 1rem;
+}
+
