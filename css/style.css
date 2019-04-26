@@ -27,5 +27,8 @@ body {
     .fixed-top {
         position: relative;
     }
-    
+}
+
+.dropdown-divider {
+    border-top: 1px solid rgb(0,0,0,.2);
 }
