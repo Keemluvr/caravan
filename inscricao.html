@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Caravan - Inscricao</title>
+</head>
+
+<body>
+
+    <!-- Modal -->
+    <div class="modal fade" id="modalLogin" tabindex="-1" role="dialog" aria-labelledby="modalLoginTitulo"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalLoginTitulo">Entre na sua Conta</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="loginEmail">Email</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1">
+                        </div>
+                        <div class="form-group">
+                            <label for="loginSenha">Senha</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1">
+                        </div>
+                        <button type="submit" class="btn btn-primary">Entrar na Conta</button>
+                        <small class="text-muted form-text">Esqueceu a senha? <a href="">Clique Aqui</a></small>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End modal -->
+
+    <!-- Navbar -->
+    <nav class="navbar fixed-top navbar-expand-md navbar-light bg-light py-3 box-shadow">
+        <a class="navbar-brand" href="index.html">
+            <img src="img/caravan.svg" alt="Caravan">
+        </a>
+
+        <!-- data- : manipulado pelo js -->
+        <!-- aria- : acessibilidade -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false"" href=" #">
+                        Locais
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="local.html">California</a>
+                        <a class="dropdown-item" href="local.html">Paris</a>
+                        <a class="dropdown-item" href="local.html">Dublin</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="planos.html">Planos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contato.html">Contato</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-toggle="modal" data-target="#modalLogin" href="">Login</a>
+                </li>
+                <li class="nav-item ml-md-2 active">
+                    <a class="btn btn-outline-primary" href="incricao.html">Inscreva-se</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- End  Navbar-->
+
+    <!-- Content -->
+
+    <!-- Questions -->
+    <section class="container">
+        <!-- Title -->
+        <div class="my-5 text-center">
+            <span class="h6 d-block">PROGRAME A VIAGEM DO SEU SONHO?</span>
+            <h1 class="display-4 text-primary">INSCREVA-SE</h1>
+        </div>
+        <!-- End title -->
+
+        <!-- Form -->
+        <div class="row">
+            <form class="col-lg-6" action="">
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="inputNome">Nome</label>
+                        <input type="text" class="form-control" id="inputNome" placeholder="Nome Completo">
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="inputCPF">CPF</label>
+                        <input type="text" class="form-control" id="inputCPF" placeholder="xxx.xxx.xxx-xx">
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="inputEmail">Email</label>
+                        <input type="email" class="form-control" id="inputEmail" placeholder="Email">
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="inputSenha">Senha</label>
+                        <input type="password" class="form-control" id="inputSenha" placeholder="Senha de acesso">
+                    </div>
+                    <div class="form-group col-12">
+                        <label for="inputEndereco">Endereço</label>
+                        <input type="text" class="form-control" id="inputEndereco" placeholder="Número, nome da rua e bairro">
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="inputCidade">Cidade</label>
+                        <input type="text" class="form-control" id="inputCidade">
+                    </div>
+                    <div class="form-group col-md-3 col-6">
+                        <label for="inputEstado">Estado</label>
+                        <select class="form-control" id="inputEstado">
+                            <option>Selecione o Estado</option>
+                            <option>Rio de Janeiro</option>
+                            <option>São Paulo</option>
+                            <option>Paraná</option>
+                            <option>Ceará</option>
+                            <option>Acre</option>
+                            <option>Santa Catarina</option>
+                        </select>
+                    </div>
+                    <div class="form-group col-md-3 col-6">
+                        <label for="inputCEP">CEP</label>
+                        <input type="text" class="form-control" id="inputCEP" placeholder="xxxxx-xxx">
+                    </div>
+                </div>
+            </form>
+        </div>
+        <!-- End form -->
+
+        
+    </section>
+    <!-- End questions -->
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white mt-5">
+        <div class="container py-4">
+            <div class="row">
+                <div class="col-md-3 col-6">
+                    <h4 class="h6">PÁGINAS</h4>
+                    <ul class="list-unstyled">
+                        <li><a href="planos.html">Planos</a></li>
+                        <li><a href="contato.html">Contato</a></li>
+                        <li><a href="inscricao.html">Inscreva-se</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 col-6">
+                    <h4 class="h6">LOCAIS</h4>
+                    <ul class="list-unstyled">
+                        <li><a href="local.html">California</a></li>
+                        <li><a href="local.html">Paris</a></li>
+                        <li><a href="local.html">Dublin</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <h4 class="h6">DADOS DE CONTATO</h4>
+                    <ul class="list-unstyled text-secondary">
+                        <li>caravan@caravan.com.br</li>
+                        <li>21 99999-9999</li>
+                        <li>De Seg. à Sex. das 8h às 18h</li>
+                    </ul>
+                </div>
+                <div class="col-md-2 col-sm-6">
+                    <h4 class="h6">REDES SOCIAIS</h4>
+                    <ul class="list-unstyled text-secondary">
+                        <li><a href="" class="btn btn-outline-secondary mb-2 btn-block buttom-max-width btn-sm">
+                                Facebook
+                            </a></li>
+                        <li><a href="" class="btn btn-outline-secondary mb-2 btn-block buttom-max-width btn-sm">
+                                Twitter
+                            </a></li>
+                        <li><a href="" class="btn btn-outline-secondary mb-2 btn-block buttom-max-width btn-sm">
+                                Youtube
+                            </a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="bg-primary text-center py-3">
+            <p class="mb-0">
+                Caravan ©‎ 2017. Alguns direitos reservados.
+            </p>
+        </div>
+    </footer>
+    <!-- End footer -->
+
+    <!-- End content -->
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
+    <script type="text/javascript" src="js/app.js"></script>
+</body>
+
+</html>
