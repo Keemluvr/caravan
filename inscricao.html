@@ -101,6 +101,7 @@
         <div class="row">
             <form class="col-lg-6" action="">
                 <div class="form-row">
+                    <!-- Part 1 -->
                     <div class="form-group col-md-6">
                         <label for="inputNome">Nome</label>
                         <input type="text" class="form-control" id="inputNome" placeholder="Nome Completo">
@@ -119,7 +120,8 @@
                     </div>
                     <div class="form-group col-12">
                         <label for="inputEndereco">Endereço</label>
-                        <input type="text" class="form-control" id="inputEndereco" placeholder="Número, nome da rua e bairro">
+                        <input type="text" class="form-control" id="inputEndereco"
+                            placeholder="Número, nome da rua e bairro">
                     </div>
                     <div class="form-group col-md-6">
                         <label for="inputCidade">Cidade</label>
@@ -142,11 +144,121 @@
                         <input type="text" class="form-control" id="inputCEP" placeholder="xxxxx-xxx">
                     </div>
                 </div>
+                <!-- End part 1 -->
+                <!-- Part 2 -->
+                <div class="bg-light rounded box-shadow p-3 form-group">
+                    <h2 class="h6 text-primary">FORMA DE PAGAMENTO</h2>
+                    <nav class="nav btn-group mb-3" id="formaPagamento" role="tablist">
+                        <button type="button" class="btn btn-secondary active btn-sm" data-toggle="tab"
+                            id="nav-cartao-tab" href="#nav-cartao" role="tab" aria-controls="nav-cartao"
+                            aria-selected="true">Cartão de Crédito</button>
+                        <button type="button" class="btn btn-secondary btn-sm" data-toggle="tab" id="nav-boleto-tab"
+                            href="#nav-boleto" role="tab" aria-controls="nav-boleto" aria-selected="false">Boleto
+                            Bancário</button>
+                    </nav>
+                    <div class="tab-content" id="formaPagamentoConteudo">
+                        <div class="tab-pane fade show active" id="nav-cartao" role="tabpanel"
+                            aria-labelledby="nav-cartao-tab">
+                            <div class="form-row">
+                                <div class="form-group col-md-6">
+                                    <label for="inputNomeCartao">Nome no Cartão</label>
+                                    <input type="text" class="form-control" id="inputNomeCartao"
+                                        placeholder="Nome Impresso no cartão">
+                                </div>
+                                <div class="form-group col-md-3 col-6">
+                                    <label for="inputMes">Mês</label>
+                                    <select class="form-control" id="inputMes">
+                                        <option>Expira mês...</option>
+                                        <option>01 / Janeiro</option>
+                                        <option>02 / Fevereiro</option>
+                                        <option>03 / Março</option>
+                                        <option>04 / Abril</option>
+                                        <option>05 / Maio</option>
+                                        <option>06 / Junho</option>
+                                        <option>07 / Julho</option>
+                                        <option>08 / Agosto</option>
+                                        <option>09 / Setembro</option>
+                                        <option>10 / Outubro</option>
+                                        <option>11 / Novembro</option>
+                                        <option>12 / Dezembro</option>
+                                    </select>
+                                </div>
+                                <div class="form-group col-md-3 col-6">
+                                    <label for="inputAno">Ano</label>
+                                    <select class="form-control" id="inputAno">
+                                        <option>Expira ano...</option>
+                                        <option>2019</option>
+                                        <option>2020</option>
+                                        <option>2021</option>
+                                        <option>2022</option>
+                                        <option>2023</option>
+                                        <option>2024</option>
+                                        <option>2025</option>
+                                        <option>2026</option>
+                                        <option>2027</option>
+                                        <option>2028</option>
+                                        <option>2029</option>
+                                        <option>2030</option>
+                                    </select>
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label for="inputNumeroCartao">Número do Cartão</label>
+                                    <input type="text" class="form-control" id="inputNumeroCartao"
+                                        placeholder="5555 5555 5555 555">
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label for="inputCodigoCartao">Código de Segurança</label>
+                                    <input type="text" class="form-control" id="inputCodigoCartao" placeholder="XXX">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="nav-boleto" role="tabpanel" aria-labelledby="nav-boleto-tab">
+                            <p class="lead">Clique em contratar plano que enviaremos um boleto para o seu email.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group form-check">
+                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                    <label class="form-check-label" for="exampleCheck1">Concordo com os <a href="">Termos e
+                            Condições</a></label>
+                </div>
+                <button type="submit" class="btn btn-primary btn-lg">Contratar Plano</button>
+                <!-- End part 2 -->
             </form>
+
+            <!-- Plan right -->
+            <div class="col-lg-5 mx-auto order-first order-lg-1 mb-5">
+                <h2 class="h6 text-primary">PLANO ESCOLHIDO</h2>
+                <div class="bg-light rounded p-4 box-shadow">
+                    <h2>Platinum <span class="badge badge-success">Novo</span></h2>
+                    <ul class="lista-plano list-unstyled">
+                        <li>→ 60 dias de viagem</li>
+                        <li>→ 6 destinos diferentes</li>
+                        <li>→ Tudo pago pela empresa</li>
+                        <li>→ Ingressos para festas</li>
+                    </ul>
+                    <form action="">
+                        <div class="form-group">
+                            <select class="form-control bg-light" id="inputCidades">
+                                <option>Selecione a cidade</option>
+                                <option>California</option>
+                                <option>Paris</option>
+                                <option>Dublin</option>
+                            </select>
+                        </div>
+                    </form>
+                    <div class="row mt-4 ">
+                        <div class="col">
+                            <span class="h4">R$7.500</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End plan right -->
         </div>
         <!-- End form -->
 
-        
+
     </section>
     <!-- End questions -->
 
